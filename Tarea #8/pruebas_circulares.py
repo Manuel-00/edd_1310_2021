@@ -1,0 +1,21 @@
+from listas_circulares import CircularLinkedList
+
+f = CircularLinkedList()
+
+print("¿Esta vacia?: ", f.is_empty())
+f.insert(7)
+f.insert(6)
+f.insert(22)
+f.insert(11)
+f.insert(16)
+f.insert(4)
+f.insert(10)
+f.insert(9)
+f.insert(36)
+f.insert(14)
+f.transversal()
+print("¿Esta vacia?: ", f.is_empty())
+print(f"¿Existe ese valor?: {f.search(7)}")
+print(f"¿Existe ese valor?: {f.search(12)}")
+f.remove(9)
+f.transversal()
